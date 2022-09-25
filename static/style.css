@@ -1,0 +1,87 @@
+
+
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100vw;
+    background-color: #fff6;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.header .btn {
+    margin-left: 10px;
+}
+
+a {
+    color: #7a41d0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header a {
+    
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.first-page {
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(40deg, #4158D0 20%, #C850C0 46%, #FFCC70 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-page .carousel-item {
+    height: 350px;
+
+}
+
+.card-aboutme {
+    width: 550px;
+    height: 700px;
+    backdrop-filter: blur(150px);
+    background-color: #fff2;
+    border-radius: 30px;
+    border: 1px solid #fff3;
+    box-shadow: 0 0 15px #fff3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.card-aboutme .img:hover {
+    transform: scale(1.2);
+}
+
+.bio {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.expirience {
+    padding: 60px 0;
+    background-image: linear-gradient( 90.7deg,  rgba(255,253,218,1) 1.9%, rgba(246,210,255,1) 39.3%, rgba(152,222,254,1) 64.7%, rgba(251,255,210,1) 100.8% );
+}
+
+.expirience h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.expirience li {
+    font-size: 24px;
+}
+

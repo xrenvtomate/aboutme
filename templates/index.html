@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'favicon.jpg' %}">
+  <title>Обо мне</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="https://github.com/xrenvtomate/aboutme/tree/master/aboutme" class="btn btn-dark">gihub repo of this site</a>
+    <a href="https://t.me/realhoodrich" class="btn btn-primary">связаться со мной</a>
+  </header>
+  <section class="first-page">
+    <div class="card-aboutme">
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'me2.jpg' %}" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'me1.png' %}" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'me3.jpg' %}" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <span class="bio">Меня зовут Бауков Дмитрий Владиславович, мне 16 лет, я из города Санкт-Петербург, учусь в лицее "Физико-тезническая школа" увлекаюсь
+        веб-разработкой и олимпиадным программированием</span>
+    </div>
+  </section>
+  <section class="expirience">
+    <div class="container">
+      <h1>Опыт и знания</h1>
+      <div class="row">
+        <div class="col-8">
+          <ul>
+            <li>отличные знания python (<a
+                href="https://lyceum.yandex.ru/certificate/check/?certNumber=220242810&lastName=%D0%91%D0%B0%D1%83%D0%BA%D0%BE%D0%B2">сертификат
+                яндекс лицея</a>)</li>
+            <li>опыт в олимпиадном программировании, призер регионального этапа ВСОШ (<a
+                href="http://neerc.ifmo.ru/school/archive/2021-2022/ru-olymp-spb-2022-standings-09.html">45-е место в
+                спб</a>)</li>
+            <li>базовые знания C++ (умею решать олимпиадные задачи, понимаю некторые низкоуровневые процессы)</li>
+            <li>разработка телеграм ботов на aiogram</li>
+            <li>discord боты на discord.py</li>
+            <li>игры и не только на pygame</li>
+            <li>работа с асинхронностью в python через asyncio</li>
+            <li>верстка html/css</li>
+            <li>базовые знания фронтенд библиотек bootstrap, tailwinds, reactjs</li>
+            <li>работа с DOM чезер JavaScript</li>
+            <li>работа с базами данных sqlite и postgresql</li>
+            <li>умею деплоить веб приложения на heroku через herokuCLI и через github</li>
+            <li>умею работать с git и github</li>
+            <li>3d графика на питоне с помощью ray casting</li>
+            <li>парсинг сайтов на python с помощью библиотек requests и beautifulsoup4</li>
+            <li>умею пользоваться npm</li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h3>несколько проектов на pygame: платформер, мячик, отскакивающий от линий, симулятор гравитации</h3>
+          (два из них есть на моем гитхабе, у меня много различных небольших проектов, могу подробней рассказать о них если надо)
+          
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'game.png' %}" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'linegame.png' %}" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'gravitysim.png' %}" class="d-block w-100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
