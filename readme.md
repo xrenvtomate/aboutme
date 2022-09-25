@@ -7,7 +7,7 @@ to download code in current directory write "git clone https://github.com/xrenvt
 
 bootstrap includes via cdn so you dont need to use npm
 
-"python manage.py runserver <port>" to run app at http://127.0.0.1:<port>/ . Defaultly port is 8000
+"python manage.py runserver [port]" to run app at http://127.0.0.1:[port]/ . Defaultly port is 8000
 
 templates (html files) store in ./templates/ directory
 
