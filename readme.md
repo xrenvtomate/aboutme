@@ -1,6 +1,7 @@
 
 # Simplest Djangp app
 
+(you need to have python 3.8 or higher)
 to download code in current directory write "git clone https://github.com/xrenvtomate/aboutme" in terminal
 
 "pip install -r requirements.txt" to install all dependencies for python interpreter (now there is only django)
